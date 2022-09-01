@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <script>
+            let user = {
+                name : 'Rahul',
+                age : 22,
+                "sur name" : "Yadgiri"
+            };
+
+            user.name = "Nithin";
+            user.age = 23;
+            user.weight=49;
+            delete user.name;
+            alert(user["age"]);
+            alert(user.age); 
+            alert(user["sur name"]); 
+
+            for(let prop in user)
+            {
+                alert(user[prop]);
+            }
+
+        </script>
+    </body>
+</html>

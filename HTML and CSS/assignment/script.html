@@ -1,0 +1,109 @@
+<html>
+    <body>
+        <script>
+            //Negative or Positive using Usual Functions
+            // function eo (num){
+            //     if(num<0) 
+            //     alert('Negative');
+            //     else if(num>0)
+            //     alert('Positive');
+            //     else
+            //     alert('Zero');
+            // }
+
+            // let num = prompt('Enter a number');
+            // eo(num);
+
+
+            //Negative or Positive using Arrow Functions
+            // const num = prompt('Enter a number');
+            // const num1 = prompt ('Enter another number');
+            // // let res = (num,num1) => (num>num1) ? num: num1;
+                
+            // alert(res(num,num1)); 
+
+            // const res = (num,num1) => {
+            //     if(num>num1)
+            //     return num;
+            //     else
+            //     return num1;
+            // }
+
+            
+
+            
+            //Prime number using arrow functions 
+            // let num = prompt('Enter a number');
+            // let res = num => {
+            //     let i,j,count=0;
+            //     for(i=1;i<=num;i++)
+            //     {
+            //         if(num%i==0)
+            //         count++;
+            //     }
+            //     if(count==2)
+            //     return "Yes,It is a prime number!";
+            //     else
+            //     return "No,It isn't prime number";
+            // }
+            // alert(res(num)); 
+
+
+
+            // Simple Calculator 
+            // let num1 = +prompt('Enter 1st number');
+            // let num2 = +prompt('Enter 2nd number');
+            // let op = prompt('Enter the operator');
+            // function res (num1,num2,op){
+            //     switch(op)
+            //     {
+            //         case "+" : return num1+num2;
+            //         case "-" : return num1-num2;
+            //         case "*" : return num1*num2;
+            //         case "/" : return num1/num2;
+            //         break;
+            //     }
+            // }
+            // alert(res(num1,num2,op));
+
+
+
+            //Simple Calculor using arrow functions
+            // let res = (num1,num2,op) => {
+            // switch(op)
+            // {
+            //     case "+" : return num1+num2;
+            //     case "-" : return num1-num2;
+            //     case "*" : return num1*num2;
+            //     case "/" : return num1/num2;
+            // }
+            // }
+
+            // alert(res(num1,num2,op));
+            
+            let s = () =>  alert('Oh my god!!! Yes i will!!');
+            function ask(question,yes,no)
+            {
+                if(confirm(question))
+                yes();
+                else
+                no();
+            }
+
+            ask(
+                "Will you marry me?",
+                s,
+                function() {alert('Yaak!!I wont');}
+            )
+      
+
+            // function s(){
+            //     alert('Oh my god!! Yes i will');
+            // }
+            
+
+           
+        </script>
+    </body>
+</html>
+
